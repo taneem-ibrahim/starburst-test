@@ -1,0 +1,17 @@
+apiVersion: starburstdata.com/v1
+kind: Presto
+metadata:
+  name: presto-test
+spec:
+  coordinator:
+    cpuLimit: 2
+    cpuRequest: 2
+    memoryAllocation: 5Gi
+  nameOverride: presto-test
+  service:
+    name: presto-test
+  worker:
+    count: 2
+    cpuLimit: 2
+    cpuRequest: 2
+    memoryAllocation: 5Gi
