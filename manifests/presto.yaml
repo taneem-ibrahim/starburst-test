@@ -4,14 +4,14 @@ metadata:
   name: presto-test
 spec:
   coordinator:
-    cpuLimit: 2
-    cpuRequest: 2
-    memoryAllocation: 5Gi
+    cpuLimit: 0.5
+    cpuRequest: 0.5
+    memoryAllocation: 1Gi
   nameOverride: presto-test
   service:
     name: presto-test
   worker:
     count: 2
-    cpuLimit: 2
-    cpuRequest: 2
-    memoryAllocation: 5Gi
+    cpuLimit: 0.5
+    cpuRequest: 0.5
+    memoryAllocation: 1Gi
